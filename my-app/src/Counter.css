@@ -1,0 +1,63 @@
+/* Counter container */
+.Counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between elements */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  color: white;
+  margin-top: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+/* Button container - buttons first, count below */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Ensures exactly 20px space between buttons */
+}
+
+/* Count holder - now positioned below the buttons */
+.count-holder {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 8px rgba(255, 204, 0, 0.4);
+  margin-top: 15px; /* Space between buttons and count */
+}
+
+/* Stylish buttons */
+button {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border: none;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 75, 43, 0.4);
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  box-shadow: 0 6px 15px rgba(255, 75, 43, 0.6);
+}
+
+button:active {
+  transform: scale(0.95);
+}
